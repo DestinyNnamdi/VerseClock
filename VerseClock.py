@@ -17,3 +17,13 @@ while True:
     # Wait for 60 seconds before checking the time again.
     time.sleep(60)
     
+    import json
+
+Open the JSON file in reading mode
+with open('bible_verses.json', 'r') as file:
+    # Load the JSON data from the file.
+
+    data = json.load(file)
+
+print(data)
+
