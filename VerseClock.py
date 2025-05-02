@@ -22,6 +22,11 @@ while True:
 Open the JSON file in reading mode
 with open('bible_verses.json', 'r') as file:
     # Load the JSON data from the file.
-
     data = json.load(file)
+
+# Select a random item from BibleVerses
+random_BibleVerse = random.choice(data["BibleVerses"])
+
+# Print randomly selected bible verse
+print(f"Randomly selected BibleVerse: {random_BibleVerse}")
 
