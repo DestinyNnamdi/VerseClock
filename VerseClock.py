@@ -30,3 +30,7 @@ random_BibleVerse = random.choice(data["BibleVerses"])
 # Print randomly selected bible verse
 print(f"Randomly selected BibleVerse: {random_BibleVerse}")
 
+# Read item aloud with TTS
+engine.say("{random_BibleVerse}")
+engine.runAndWait()
+
